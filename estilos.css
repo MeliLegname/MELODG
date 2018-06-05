@@ -1,0 +1,439 @@
+
+:root{
+	--grisTopo: #262626;
+	--amarillo: #F8E483;
+	--rosa: #E1C1CC;
+	--celeste: #C5DBED;
+	--blanco: #ffffff;
+
+}
+
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+
+}
+
+
+body {
+
+
+	font-family: 'Raleway', sans-serif;
+
+
+
+}
+
+h1{
+
+	text-align: center;
+	color: #E1C1CC;
+	text-shadow: 4px 2px 0 white, 4px 2px 3px var(--amarillo);
+
+
+
+}
+
+
+
+/* * * * * * * * * * * * * * * *-* *BOTONERA LISTA*-* * * * * * * * * * * * * * * * */
+
+
+.botonera{
+
+	position: fixed;
+	padding:;
+	width: 100%;
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-wrap: wrap;
+
+
+	background-color: var(--grisTopo);
+	color: var(--blanco);
+	
+	
+
+
+
+}
+
+.botonera-lista{
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	max-width: 100%;
+
+
+	padding:0 45px 0 45px;
+
+	
+
+}
+
+.botonera-lista_item{
+	
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	flex-basis: 35px;
+
+	text-decoration: none;
+	color: var(--blanco);
+	
+
+
+}
+
+
+.botonera-lista a{
+
+	display:flex;
+	color: white;
+	margin: 15px ;
+
+
+
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+
+}
+
+.bot1:hover{
+	background-color: var(--amarillo);
+	font-weight: bold;
+}
+
+.bot2:hover{
+	background-color: var(--rosa);
+	font-weight: bold;
+}
+
+.bot3:hover{
+	background-color: var(--celeste);
+	font-weight: bold;
+}
+
+
+
+
+.botonera-lista li:nth-child(1) {
+
+	flex-grow: 4;
+	justify-content: flex-start;
+	
+}
+
+.toggle{
+	display: none;
+	background: none;
+	border: none;
+}
+
+/* La botonera se vuelve vertical */
+@media (max-width: 767px){
+	.botonera{
+		position: relative;
+		width: 100%;
+		
+		justify-content: left;
+	}
+	.botonera-lista{
+
+		margin-top: 257px;
+		flex-direction: column;
+		position: absolute;
+		width: 100%;
+		display: none;
+		padding: 0;
+
+		
+
+
+	}
+	.botonera-lista li{
+		background-color: var(--grisTopo);
+		justify-content: left;
+	
+		
+	}
+	.toggle{
+		display: inline;
+		padding: 5px;
+
+	}
+}
+
+.mostrar{
+	display: flex;
+}
+
+
+
+
+
+/*cierra botonera*/
+
+/* * * * * * * * * * * * * * * *-* *SECCION SLIDER*-* * * * * * * * * * * * * * * * */
+
+
+
+.seccion-slider{
+
+
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+.seccion-slider img{
+
+	margin-top: 45px;
+	max-width: 100%;
+
+}
+
+.slider-tarjetas{
+	display: block;
+
+}
+
+@media (max-width: 767px){
+
+	.slider-tarjetas{
+		display: none;
+
+}}
+
+
+
+/*cierra slider*/
+
+/* * * * * * * * * * * * * * * *-* *SECCION TRABAJOS*-* * * * * * * * * * * * * * * * */
+
+
+.seccion-trabajos{
+
+	display: flex;
+	flex-wrap: wrap;
+
+
+	justify-content: center;
+	flex-direction: column;
+
+	padding-top: 35px;
+	align-items: center;
+	background-image: url(images/fondo.jpg);
+	
+	
+	
+
+}
+
+
+/*galeria categorias de trabajos*/
+
+.galeria-tarjetas-personales{
+
+
+	max-width: 50%;
+	align-content: center;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 35px;
+
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	padding-top: 15px;
+	padding-left: auto;
+	padding-right: auto;
+
+	
+}
+
+.galeria-tarjetas-personales img{
+	margin: auto;
+
+	max-width: 100%;
+
+	min-width: ;
+	float: right;
+
+}
+
+.im1:hover{
+background-color: red;
+
+}
+
+
+
+/* La galeria se vuelve vertical */
+@media (max-width: 767px){
+
+
+	.galeria-tarjetas-personales{
+
+	grid-template-columns: 1fr 1fr;
+	min-width: 90%;
+
+
+	}
+}
+
+/* * * * * * * * * * * * * * * *-* *SECCION TRABAJOS*-* * * * * * * * * * * * * * * * */
+
+
+
+.seccion-objetivos{
+
+	clear: both;
+	max-width: 100%;
+
+
+	margin: auto;
+
+	max-width: 75%;
+	align-content: center;
+	text-align: center;
+
+}
+
+.seccion-objetivos h1{
+
+margin-top: 35px;
+}
+
+/* * * * * * * * * * * * * * * *-* *SECCION TRABAJOS*-* * * * * * * * * * * * * * * * */
+
+
+.seccion-consultas{
+
+max-width: 100%;
+max-height: 100%
+
+margin-top: 35px;
+padding-top: 35px;
+align-items: center;
+background-image: url(images/fondo2.jpg);
+
+	
+
+}
+
+.formulario-contacto{
+display: flex;
+flex-wrap: wrap;
+
+justify-content: center;
+flex-direction: column;
+
+max-width: 50%;
+
+margin: auto;
+
+padding:30px 0 ;
+
+
+
+
+}
+
+
+.formulario-contacto input{
+	padding: 5px;
+
+
+}
+
+
+
+/* * * * * * * * * * * * * * * *-* *SECCION SOBRE MI*-* * * * * * * * * * * * * * * * */
+
+
+.seccion-objetivos p{
+
+padding:40px 0;
+
+}
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * *-* *SECCION CONSULTAS*-* * * * * * * * * * * * * * * * */
+
+.seccion-consultas{
+
+	margin: auto;
+	padding: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+form input{
+	
+	padding: auto;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 80%;
+
+}
+
+.boton-enviar{
+
+	background-color: var(--grisTopo);
+	color:var(--blanco);
+	border-radius: 2px;
+	border:none;
+
+}
+
+.formulario-contacto textarea{
+
+	min-height: 150px;
+
+
+}
+
+/* * * * * * * * * * * * * * * *-* *SECCION FOOTER*-* * * * * * * * * * * * * * * * */
+
+
+
+
+.seccion-footer{
+
+	display: flex;
+
+	margin: auto;
+	padding: 10px;
+
+	background-color: var(--grisTopo);
+	color: white;
+	text-align:center;
+
+	justify-content: space-around;
+
+}
+
+
+}
+
+
+
