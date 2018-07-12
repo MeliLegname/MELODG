@@ -83,7 +83,7 @@ h1{
 	flex-grow: 1;
 	display: flex;
 	justify-content: center;
-	flex-basis: 35px;
+	flex-basis: 54px;
 
 	text-decoration: none;
 	color: var(--blanco);
@@ -120,6 +120,7 @@ h1{
 .bot3:hover{
 	background-color: var(--celeste);
 	font-weight: bold;
+
 }
 
 
@@ -138,7 +139,13 @@ h1{
 	border: none;
 }
 
-/* La botonera se vuelve vertical */
+/* Botonera movil */
+
+
+
+
+
+
 @media (max-width: 767px){
 	.botonera{
 		position: relative;
@@ -148,7 +155,7 @@ h1{
 	}
 	.botonera-lista{
 
-		margin-top: 257px;
+		margin-top: 125px;
 		flex-direction: column;
 		position: absolute;
 		width: 100%;
@@ -275,14 +282,27 @@ h1{
 
 }
 
-.im1:hover{
-background-color: red;
+.galeria-tarjetas-personales img:hover{
+
+	background-color: green;
+	border-radius: 50%;
+	transition: 1s;
+
 
 }
 
-
-
 /* La galeria se vuelve vertical */
+@media (max-width: 1024px){
+
+
+.galeria-tarjetas-personales{
+
+
+	max-width: 85%;
+}}
+
+
+
 @media (max-width: 767px){
 
 
@@ -412,6 +432,36 @@ form input{
 
 }
 
+
+
+@media (max-width: 1024px){
+	form input{
+	
+	padding: auto;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 90%;
+
+}
+
+
+
+}
+
+
+@media (max-width: 767px){
+	form input{
+	
+	padding: auto;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 90%;
+
+}
+	
+}
 /* * * * * * * * * * * * * * * *-* *SECCION FOOTER*-* * * * * * * * * * * * * * * * */
 
 
