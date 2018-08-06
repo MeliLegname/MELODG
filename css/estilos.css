@@ -44,9 +44,10 @@ h1{
 
 .botonera{
 
+	z-index: 11;
 	position: fixed;
-	padding:;
 	width: 100%;
+	height: 11vh;
 
 	
 	display: flex;
@@ -92,12 +93,19 @@ h1{
 
 }
 
+.logo-menu{
+display:inline;
+
+max-height: 12vh;
+padding: auto;
+margin: auto;
+
+}
 
 .botonera-lista a{
 
 	display:flex;
 	color: white;
-	margin: 15px ;
 
 
 
@@ -110,16 +118,22 @@ h1{
 .bot1:hover{
 	background-color: var(--amarillo);
 	font-weight: bold;
+	height: 11vh;
+
 }
 
 .bot2:hover{
 	background-color: var(--rosa);
 	font-weight: bold;
+	height: 11vh;
+
 }
 
 .bot3:hover{
 	background-color: var(--celeste);
 	font-weight: bold;
+	height: 11vh;
+
 
 }
 
@@ -150,12 +164,13 @@ h1{
 	.botonera{
 		position: relative;
 		width: 100%;
+		max-height: 7vh;
 		
 		justify-content: left;
 	}
 	.botonera-lista{
 
-		margin-top: 125px;
+		margin-top: 96px;
 		flex-direction: column;
 		position: absolute;
 		width: 100%;
@@ -170,7 +185,12 @@ h1{
 		background-color: var(--grisTopo);
 		justify-content: left;
 	
-		
+	
+	}
+	.logo-menu{
+
+		display: none;
+
 	}
 	.toggle{
 		display: inline;
@@ -241,7 +261,7 @@ h1{
 
 	padding-top: 35px;
 	align-items: center;
-	background-image: url(images/fondo.jpg);
+	background-image: url(../images/fondo.jpg);
 	
 	
 	
@@ -279,17 +299,18 @@ h1{
 
 	min-width: ;
 	float: right;
+	will-change: filter;
 
-}
-
-.galeria-tarjetas-personales img:hover{
-
-	background-color: green;
-	border-radius: 50%;
-	transition: 1s;
+	filter: grayscale(0.9);
+	transition: filter 1.5s;
 
 
 }
+
+
+img:hover{
+	filter: hue-rotate(0deg);
+} 
 
 /* La galeria se vuelve vertical */
 @media (max-width: 1024px){
@@ -344,12 +365,12 @@ margin-top: 35px;
 .seccion-consultas{
 
 max-width: 100%;
-max-height: 100%
+max-height: 100%;
 
 margin-top: 35px;
 padding-top: 35px;
 align-items: center;
-background-image: url(images/fondo2.jpg);
+background-image: url(../images/fondo2.jpg);
 
 	
 
