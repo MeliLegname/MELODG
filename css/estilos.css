@@ -303,7 +303,6 @@ margin: auto;
 
 	max-width: 100%;
 
-	min-width: ;
 
 
 	will-change: filter;
@@ -456,6 +455,24 @@ form input{
 
 }
 
+
+
+input:valid{
+	border: 2px solid green;
+}
+
+input:invalid{
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: right center;
+
+	border: 2px solid red;
+}
+
+
+
+
+
 .boton-enviar{
 
 	background-color: var(--grisTopo);
@@ -471,6 +488,7 @@ form input{
 
 
 }
+
 
 
 
@@ -523,7 +541,7 @@ form input{
 }
 
 
-}
+
 
 
 

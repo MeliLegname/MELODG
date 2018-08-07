@@ -142,17 +142,18 @@
 		<div class="seccion-consultas">
 
 			<h1 id="seccion-consultas">CONSULTAS</h1>
+	
 
-			<form class="formulario-contacto" action="">
+			<form class="formulario-contacto" action="php/enviar.php" method="post">
 				
 		
-				<input type="email" placeholder="E-mail" aria-label="esquibe tu mail aquí">
+				<input type="text" name="email" placeholder="E-mail" aria-label="esquibe tu mail aquí" required>
 				<br>
 
-				<input type="text" placeholder="Nombre y apellido" aria-label="Nombre y apellido">
+				<input type="text" name="nombre" placeholder="Nombre y apellido" aria-label="Nombre y apellido"required >
 				<br>
 
-				<textarea name="comentarios" aria-label="Escribe tu consulta aquí">
+				<textarea name="comentario" aria-label="Escribe tu consulta aquí" required>
 					
 				</textarea>
 			
