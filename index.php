@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
-
 <html>
-	<meta charset="utf-8" lang="es">
+	<meta charset="UTF-8" lang="es">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
 <head>
@@ -133,7 +132,22 @@
 
 
 		</div> <!-- Cierra .seccion-trabajos -->
+		<div class="seccion-newsletter">
+			<p>Suscribite para recibir las mejores promos</p>
+			<form action="php/suscribirse.php" method="post">
 
+				<input type="text" name="nombre2">
+				<br>
+				<input type="email" name="email2">
+				<br>
+				<input class="boton-enviar" type="submit" value="Enviar">
+
+
+			</form>
+
+
+
+		</div>
 		
 		<div class="seccion-objetivos">
 
